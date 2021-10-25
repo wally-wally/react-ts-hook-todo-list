@@ -1,0 +1,30 @@
+@import 'mixins/alignFlex';
+
+header {
+  @include alignFlex(_, _, space-between, center);
+  
+  background-color: antiquewhite;
+  padding: 10px;
+  
+  h2, a {
+    font-family: 'Noto Sans KR';
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: $fontBold - 100;
+  }
+
+  .tabs {
+    a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 10px;
+
+      &.active-tab {
+        font-weight: $fontBold;
+      }
+    }
+  }
+}
