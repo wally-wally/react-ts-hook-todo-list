@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const sassPlugin = require('sass');
- 
+
 // 개발 환경 모드
 const mode = process.env.NODE_ENV || 'development';
 const isProdMode = mode === 'production';
